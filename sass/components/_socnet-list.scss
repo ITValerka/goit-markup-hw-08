@@ -1,0 +1,74 @@
+.socnet-list {
+  display: flex;
+  width: 206px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  &__item_accent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-logo-btn-accent);
+    }
+  }
+
+  &__icon-insta {
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    .socnet-list__item_accent:hover &,
+    .socnet-list__item_accent:focus & {
+      fill: var(--accent-text-for-btn);
+    }
+  }
+  &__icon-tw {
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    .socnet-list__item_accent:hover &,
+    .socnet-list__item_accent:focus & {
+      fill: var(--accent-text-for-btn);
+    }
+  }
+  &__icon-fb {
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    .socnet-list__item_accent:hover &,
+    .socnet-list__item_accent:focus & {
+      fill: var(--accent-text-for-btn);
+    }
+  }
+  &__icon-lnkdn {
+    width: 20px;
+    height: 20px;
+    fill: var(--svg-color);
+    transition: fill var(--transition-duration)
+      var(--transition-timing-function);
+
+    .socnet-list__item_accent:hover &,
+    .socnet-list__item_accent:focus & {
+      fill: var(--accent-text-for-btn);
+    }
+  }
+}

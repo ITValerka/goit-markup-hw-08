@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a href="./index.html" class="logo link">
+            <p class="logo__web-header">
+              Web<span class="logo__studio-header">Studio</span>
+            </p></a
+          >
+          <ul class="nav-list list">
+            <li class="nav-list__item">
+              <a
+                href="./index.html"
+                class="nav-list__link nav-list__link--accent link"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a
+                href="./portfolio.html"
+                class="
+                  nav-list__link
+                  nav-list__link_accent
+                  nav-list__link-portfolio--active
+                  link
+                "
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list__item">
+              <a href="" class="nav-list__link-contacts link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts contacts-header list">
+          <li class="contacts__email">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts__link_accent link"
+            >
+              <svg class="contacts__envelope" width="27" height="22">
+                <use href="./images/icons.svg#iconsenvelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="all-contacts__list-tel">
+            <a
+              href="tel:+380961111111"
+              class="contacts__link contacts__link_accent tel link"
+            >
+              <svg class="contacts__smartphone" width="14" height="20">
+                <use href="./images/icons.svg#iconssmartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="header__mobile-menu-btn" data-menu-button>
+          <svg class="header__mobile-menu-icon">
+            <use href="./images/icons.svg#icon-mobile-menu-btn"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <div class="container mobile-menu__container">
+            <button
+              type="button"
+              class="mobile-menu__close-btn mobile-menu__close-btn--accent"
+              data-menu-close
+            >
+              <svg class="modal-close-btn-svj" width="18" height="18">
+                <use href="./images/icons.svg#iconscross"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link link">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  href="./portfolio.html"
+                  class="mobile-menu__link mobile-menu__link--active link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+              </li>
+              <li class="mobile-menu__item mobile-menu__contacts link">
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-menu__link mobile-menu__tel link"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="all-contacts__list-tel">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu__link mobile-menu__email link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__socnet-list list">
+              <li class="mobile-menu__socitem">
+                <a class="mobile-menu__soclink link" href=""> Instagram </a>
+                <svg class="mobile-menu__line-icon">
+                  <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+              </li>
+              <li class="mobile-menu__socitem">
+                <a class="mobile-menu__soclink link" href=""> Twitter </a>
+                <svg class="mobile-menu__line-icon">
+                  <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+              </li>
+              <li class="mobile-menu__socitem">
+                <a class="mobile-menu__soclink link" href=""> Facebook </a>
+                <svg class="mobile-menu__line-icon">
+                  <use href="./images/icons.svg#icon-line"></use>
+                </svg>
+              </li>
+              <li class="mobile-menu__socitem">
+                <a class="mobile-menu__soclink link" href="">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-projects">
+        <div class="container filter-container">
+          <h2 class="section-title section-title--hidden">Портфолио</h2>
+          <ul class="filter list">
+            <li class="filter__item">
+              <button
+                class="filter__button filter__button--accent"
+                type="button"
+              >
+                Все
+              </button>
+            </li>
+            <li class="filter__item">
+              <button
+                class="filter__button filter__button--accent"
+                type="button"
+              >
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter__item">
+              <button
+                class="filter__button filter__button--accent"
+                type="button"
+              >
+                Приложения
+              </button>
+            </li>
+            <li class="filter__item">
+              <button
+                class="filter__button filter__button--accent"
+                type="button"
+              >
+                Дизайн
+              </button>
+            </li>
+            <li class="filter__item">
+              <button
+                class="filter__button filter__button--accent"
+                type="button"
+              >
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="project-list list container-wrap">
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-desktop.webp   1x,
+                        ./images/portfolio/portfolio1-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-desktop.jpg   1x,
+                        ./images/portfolio/portfolio1-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-tab.webp   1x,
+                        ./images/portfolio/portfolio1-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-tab.jpg   1x,
+                        ./images/portfolio/portfolio1-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-mob.webp   1x,
+                        ./images/portfolio/portfolio1-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-mob.jpg   1x,
+                        ./images/portfolio/portfolio1-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/img1.jpg"
+                      alt="вебсайт магазина технокряк"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Технокряк</p>
+                <p class="project-list__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-desktop.webp   1x,
+                        ./images/portfolio/portfolio2-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-desktop.jpg   1x,
+                        ./images/portfolio/portfolio2-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-tab.webp   1x,
+                        ./images/portfolio/portfolio2-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-tab.jpg   1x,
+                        ./images/portfolio/portfolio2-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-mob.webp   1x,
+                        ./images/portfolio/portfolio2-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-mob.jpg   1x,
+                        ./images/portfolio/portfolio2-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio2-mob.jpg"
+                      alt="постер баскетбольного матча"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">
+                  Постер New Orlean vs Golden Star
+                </p>
+                <p class="project-list__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-desktop.webp   1x,
+                        ./images/portfolio/portfolio3-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-desktop.jpg   1x,
+                        ./images/portfolio/portfolio3-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-tab.webp   1x,
+                        ./images/portfolio/portfolio3-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-tab.jpg   1x,
+                        ./images/portfolio/portfolio3-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-mob.webp   1x,
+                        ./images/portfolio/portfolio3-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-mob.jpg   1x,
+                        ./images/portfolio/portfolio3-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio3-mob.jpg"
+                      alt="приложение для ресторана Seafood"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Ресторан Seafood</p>
+                <p class="project-list__type">Приложение</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-desktop.webp   1x,
+                        ./images/portfolio/portfolio4-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-desktop.jpg   1x,
+                        ./images/portfolio/portfolio4-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-tab.webp   1x,
+                        ./images/portfolio/portfolio4-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-tab.jpg   1x,
+                        ./images/portfolio/portfolio4-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-mob.webp   1x,
+                        ./images/portfolio/portfolio4-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-mob.jpg   1x,
+                        ./images/portfolio/portfolio4-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio4-mob.jpg"
+                      alt="маркетинг проекта Prime"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Проект Prime</p>
+                <p class="project-list__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-desktop.webp   1x,
+                        ./images/portfolio/portfolio5-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-desktop.jpg   1x,
+                        ./images/portfolio/portfolio5-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-tab.webp   1x,
+                        ./images/portfolio/portfolio5-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-tab.jpg   1x,
+                        ./images/portfolio/portfolio5-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-mob.webp   1x,
+                        ./images/portfolio/portfolio5-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-mob.jpg   1x,
+                        ./images/portfolio/portfolio5-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio5-mob.jpg"
+                      alt="приложение для проекта Boxes"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Проект Boxes</p>
+                <p class="project-list__type">Приложение</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-desktop.webp   1x,
+                        ./images/portfolio/portfolio6-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-desktop.jpg   1x,
+                        ./images/portfolio/portfolio6-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-tab.webp   1x,
+                        ./images/portfolio/portfolio6-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-tab.jpg   1x,
+                        ./images/portfolio/portfolio6-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-mob.webp   1x,
+                        ./images/portfolio/portfolio6-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-mob.jpg   1x,
+                        ./images/portfolio/portfolio6-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio6-mob.jpg"
+                      alt="веб сайт Inspiration has no Borders"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Inspiration has no Borders</p>
+                <p class="project-list__type">Веб-сайт</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-desktop.webp   1x,
+                        ./images/portfolio/portfolio7-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-desktop.jpg   1x,
+                        ./images/portfolio/portfolio7-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-tab.webp   1x,
+                        ./images/portfolio/portfolio7-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-tab.jpg   1x,
+                        ./images/portfolio/portfolio7-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-mob.webp   1x,
+                        ./images/portfolio/portfolio7-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-mob.jpg   1x,
+                        ./images/portfolio/portfolio7-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio7-mob.jpg"
+                      alt="дизайн издания Limited Edition"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Издание Limited Edition</p>
+                <p class="project-list__type">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-desktop.webp   1x,
+                        ./images/portfolio/portfolio8-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-desktop.jpg   1x,
+                        ./images/portfolio/portfolio8-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-tab.webp   1x,
+                        ./images/portfolio/portfolio8-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-tab.jpg   1x,
+                        ./images/portfolio/portfolio8-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-mob.webp   1x,
+                        ./images/portfolio/portfolio8-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-mob.jpg   1x,
+                        ./images/portfolio/portfolio8-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio8-mob.jpg"
+                      alt="маркетинг для проекта LAB"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Проект LAB</p>
+                <p class="project-list__type">Маркетинг</p>
+              </div>
+            </li>
+            <li class="project-list__card project-list__card--accent">
+              <a href=" " class="project-list__link">
+                <div class="project-list__content-wrap">
+                  <picture class="project-list__picture">
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-desktop.webp   1x,
+                        ./images/portfolio/portfolio9-desktop2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-desktop.jpg   1x,
+                        ./images/portfolio/portfolio9-desktop2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-tab.webp   1x,
+                        ./images/portfolio/portfolio9-tab2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-tab.jpg   1x,
+                        ./images/portfolio/portfolio9-tab2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-mob.webp   1x,
+                        ./images/portfolio/portfolio9-mob2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-mob.jpg   1x,
+                        ./images/portfolio/portfolio9-mob2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/portfolio9-mob.jpg"
+                      alt="приложение Growing Business"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <div class="project-list__meta">
+                <p class="project-list__name">Growing Busines</p>
+                <p class="project-list__type">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section">
+      <div class="container footer-container">
+        <div class="footer-container-left">
+          <a href="./index.html" class="logo link logo-footer">
+            <span class="logo__web-footer">Web</span
+            ><span class="logo__studio-footer">Studio</span></a
+          >
+          <address class="all-contacts">
+            <ul class="all-contacts__list list">
+              <li class="all-contacts__item">
+                <a
+                  href="https://goo.gl/maps/yPK8ENYA3hXseCai9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="
+                    all-contacts__link-map all-contacts__link-map--accent
+                    link
+                  "
+                >
+                  г.Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="all-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="
+                    contacts__link
+                    all-contacts__link-footer
+                    link
+                    all-contacts__link-footer--accent
+                  "
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="
+                    contacts__link
+                    link
+                    all-contacts__link-footer all-contacts__link-footer--accent
+                  "
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us">
+          <p class="join-us__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="join-us__socnet link list">
+            <li class="join-us__item join-us__item--accent">
+              <a class="join-us__link" href="">
+                <svg class="join-us__svg">
+                  <use href="./images/icons.svg#iconsinstagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item join-us__item--accent">
+              <a class="join-us__link" href="">
+                <svg class="join-us__svg">
+                  <use href="./images/icons.svg#iconstwitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item join-us__item--accent">
+              <a class="join-us__link" href="">
+                <svg class="join-us__svg">
+                  <use href="./images/icons.svg#iconsfacebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="join-us__item join-us__item--accent">
+              <a class="join-us__link" href="">
+                <svg class="join-us__svg">
+                  <use href="./images/icons.svg#iconslinkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-form-footer">
+          <form class="form form-footer" action="">
+            <p class="form-footer__text">подпишитесь на рассылку</p>
+            <label for="mailing"></label>
+            <input
+              class="form-footer__input form-footer__input--placeholder"
+              type="email"
+              name="e-mail-for-mailing"
+              id="mailing"
+              autocomplete="email"
+              placeholder="E-mail"
+            />
+            <button class="form-footer__btn" type="submit">
+              Подписаться
+              <svg class="form-footer__svg" width="24px" height="24px">
+                <use href="./images/icons.svg#iconsplane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>

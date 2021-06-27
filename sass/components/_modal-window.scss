@@ -1,0 +1,87 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 528px;
+  background-color: #ffffff;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+}
+
+.modal-close-btn {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+  &_accent:focus,
+  &_accent:hover {
+    fill: var(--color-logo-btn-accent);
+  }
+}
+
+.modal-form__label-policy {
+  @include font();
+  padding-left: 12px;
+  color: var(--second-colour-for-text);
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    border: 2px solid var(--color-text-body-icon-bg);
+    border-radius: 4px;
+    transition: border-color var(--transition-duration)
+      var(--transition-timing-function);
+  }
+  .modal-form__input-policy:checked + &::before {
+    background-image: url(../images/mainpage/icon-policy-tip.svg);
+    fill: var(--color-text-body-icon-bg);
+  }
+
+  .modal-form__input-policy:focus + &::before {
+    border: 2px solid var(--color-logo-btn-accent);
+    border-radius: 4px;
+  }
+}
+.policy-contract {
+  color: var(--color-logo-btn-accent);
+}
+
+.modal-form-btn {
+  @include font(16px, 700, 1.87, 0.06em);
+  display: block;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: solid 0px transparent;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  font-style: normal;
+  color: var(--accent-text-for-btn);
+  background-color: var(--color-logo-btn-accent);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    box-shadow var(--transition-duration) var(--transition-timing-function);
+  &_accent:hover,
+  &_accent:focus {
+    background-color: var(--btn-focus-background-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+}

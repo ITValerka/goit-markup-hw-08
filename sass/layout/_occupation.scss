@@ -1,0 +1,38 @@
+.section-occupation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-occupation {
+    padding-top: 64px;
+    padding-bottom: 94px;
+  }
+  .occupation {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    & .occupation__item {
+      flex-basis: calc(100% / 3);
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    &__overlay {
+      position: relative;
+    }
+    &__text {
+      @include font(14px, 700, 1.17, 0.03em);
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      width: 370px;
+      height: 70px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(47, 48, 58, 0.8);
+      color: var(--accent-text-for-btn);
+      text-transform: uppercase;
+    }
+  }
+}

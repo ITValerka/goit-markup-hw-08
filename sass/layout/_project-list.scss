@@ -1,0 +1,111 @@
+.section-title {
+  visibility: hidden;
+}
+.filter-container {
+  padding-bottom: 45px;
+}
+.filter {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+
+  &__button {
+    @include font(16px, 500, 1.6, 0.03em);
+    border-radius: 4px;
+    border-color: transparent;
+    margin: 8px 4px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-family: Roboto;
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
+    background-color: #f5f4fa;
+    cursor: pointer;
+
+    &--accent:hover,
+    &--accent:focus {
+      background-color: var(--color-logo-btn-accent);
+      color: var(--accent-text-for-btn);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-list {
+  &__name {
+    @include font(18px, 700, 2, 0.06em);
+    margin-top: 20px;
+  }
+
+  &__type {
+    @include font(16px, 400, 1.87, 0.03em);
+    color: var(--second-colour-for-text);
+  }
+  &__meta {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-left: solid 1px var(--project-border-color);
+    border-right: solid 1px var(--project-border-color);
+    border-bottom: solid 1px var(--project-border-color);
+    background-color: var(--accent-text-for-btn);
+  }
+  &__card {
+    margin: 15px;
+    transition: box-shadow var(--transition-duration)
+      var(--transition-timing-function);
+
+    &--accent:hover,
+    &--accent:focus {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+      .project-list__name,
+      .project-list__type {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px;
+    margin-top: -30px;
+    &__button {
+      margin: 0 4px;
+      padding: 6px 22px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-container {
+    padding-bottom: 79px;
+  }
+  .button {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .filter {
+    margin-bottom: 35px;
+  }
+  .project-list {
+    &__name {
+      margin-top: 0;
+    }
+    &__card {
+      &--accent:hover,
+      &--accent:focus {
+        .project-list__name,
+        .project-list__type {
+          display: block;
+        }
+      }
+    }
+  }
+}

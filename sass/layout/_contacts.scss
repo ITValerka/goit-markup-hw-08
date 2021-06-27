@@ -1,0 +1,24 @@
+.all-contacts {
+  font-style: normal;
+  margin-top: 20px;
+  &__link-map {
+    color: var(--accent-text-for-btn);
+    transition: color var(--transition-duration)
+      var(--transition-timing-function);
+
+    &_accent:hover,
+    &_accent:focus {
+      color: var(--color-logo-btn-accent);
+    }
+  }
+
+  &__link-footer {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 13px;
+
+    &_accent:hover,
+    &_accent:focus {
+      color: var(--color-logo-btn-accent);
+    }
+  }
+}

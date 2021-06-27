@@ -1,0 +1,36 @@
+.logo {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  &__studio-header {
+    color: #000000;
+  }
+  &__web-header {
+    color: var(--color-logo-btn-accent);
+  }
+  &__studio-footer {
+    color: var(--accent-text-for-btn);
+  }
+  &__web-footer {
+    color: var(--color-logo-btn-accent);
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
+}
