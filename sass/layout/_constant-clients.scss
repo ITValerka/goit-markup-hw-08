@@ -30,14 +30,14 @@
   align-items: center;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 
-  &_accent:hover,
-  &_accent:focus {
+  &--accent:hover,
+  &--accent:focus {
     background-color: transparent;
     border: solid 1px var(--color-logo-btn-accent);
   }
 
-  &_accent:hover .clients-list__icon,
-  &_accent:focus .clients-list__icon {
+  &--accent:hover .clients-list__icon,
+  &--accent:focus .clients-list__icon {
     fill: var(--color-logo-btn-accent);
   }
 }

@@ -25,8 +25,8 @@
   cursor: pointer;
   padding: 0;
   transition: fill var(--transition-duration) var(--transition-timing-function);
-  &_accent:focus,
-  &_accent:hover {
+  &--accent:focus,
+  &--accent:hover {
     fill: var(--color-logo-btn-accent);
   }
 }
@@ -79,8 +79,8 @@
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     box-shadow var(--transition-duration) var(--transition-timing-function);
-  &_accent:hover,
-  &_accent:focus {
+  &--accent:hover,
+  &--accent:focus {
     background-color: var(--btn-focus-background-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }

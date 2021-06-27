@@ -55,28 +55,28 @@
   transition: background-color var(--transition-duration)
     var(--transition-timing-function);
 
-  &_accent:hover,
-  &_accent:focus {
+  &--accent:hover,
+  &--accent:focus {
     background-color: var(--color-logo-btn-accent);
   }
 
-  &_accent:hover &__svg,
-  &_accent:focus &__svg {
+  &--accent:hover &__svg,
+  &--accent:focus &__svg {
     fill: var(--accent-text-for-btn);
   }
 
-  &_accent:hover .socnet-svg-footer-tw,
-  &_accent:focus .socnet-svg-footer-tw {
+  &--accent:hover .socnet-svg-footer-tw,
+  &--accent:focus .socnet-svg-footer-tw {
     fill: var(--accent-text-for-btn);
   }
 
-  &_accent:hover .socnet-svg-footer-fb,
-  &_accent:focus .socnet-svg-footer-fb {
+  &--accent:hover .socnet-svg-footer-fb,
+  &--accent:focus .socnet-svg-footer-fb {
     fill: var(--accent-text-for-btn);
   }
 
-  &_accent:hover .socnet-svg-footer-lnkdn,
-  &_accent:focus .socnet-svg-footer-lnkdn {
+  &--accent:hover .socnet-svg-footer-lnkdn,
+  &--accent:focus .socnet-svg-footer-lnkdn {
     fill: var(--accent-text-for-btn);
   }
 }

@@ -133,7 +133,7 @@ body {
   margin: 0 auto;
 }
 
-.socnet-list__item_accent {
+.socnet-list__item--accent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,7 @@ body {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.socnet-list__item_accent:hover, .socnet-list__item_accent:focus {
+.socnet-list__item--accent:hover, .socnet-list__item--accent:focus {
   background-color: var(--color-logo-btn-accent);
 }
 
@@ -156,8 +156,8 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.socnet-list__item_accent:hover .socnet-list__icon-insta,
-.socnet-list__item_accent:focus .socnet-list__icon-insta {
+.socnet-list__item--accent:hover .socnet-list__icon-insta,
+.socnet-list__item--accent:focus .socnet-list__icon-insta {
   fill: var(--accent-text-for-btn);
 }
 
@@ -168,8 +168,8 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.socnet-list__item_accent:hover .socnet-list__icon-tw,
-.socnet-list__item_accent:focus .socnet-list__icon-tw {
+.socnet-list__item--accent:hover .socnet-list__icon-tw,
+.socnet-list__item--accent:focus .socnet-list__icon-tw {
   fill: var(--accent-text-for-btn);
 }
 
@@ -180,8 +180,8 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.socnet-list__item_accent:hover .socnet-list__icon-fb,
-.socnet-list__item_accent:focus .socnet-list__icon-fb {
+.socnet-list__item--accent:hover .socnet-list__icon-fb,
+.socnet-list__item--accent:focus .socnet-list__icon-fb {
   fill: var(--accent-text-for-btn);
 }
 
@@ -192,8 +192,8 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.socnet-list__item_accent:hover .socnet-list__icon-lnkdn,
-.socnet-list__item_accent:focus .socnet-list__icon-lnkdn {
+.socnet-list__item--accent:hover .socnet-list__icon-lnkdn,
+.socnet-list__item--accent:focus .socnet-list__icon-lnkdn {
   fill: var(--accent-text-for-btn);
 }
 
@@ -395,7 +395,7 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-close-btn_accent:focus, .modal-close-btn_accent:hover {
+.modal-close-btn--accent:focus, .modal-close-btn--accent:hover {
   fill: var(--color-logo-btn-accent);
 }
 
@@ -455,7 +455,7 @@ body {
   transition: background-color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 
-.modal-form-btn_accent:hover, .modal-form-btn_accent:focus {
+.modal-form-btn--accent:hover, .modal-form-btn--accent:focus {
   background-color: var(--btn-focus-background-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
@@ -607,7 +607,7 @@ body {
     padding-bottom: 32px;
     transition: color var(--transition-duration) var(--transition-timing-function);
   }
-  .nav-list__link_accent:hover, .nav-list__link_accent:focus {
+  .nav-list__link--accent:hover, .nav-list__link--accent:focus {
     color: var(--color-logo-btn-accent);
   }
   .nav-list__item {
@@ -671,7 +671,7 @@ body {
     align-items: center;
     transition: color var(--transition-duration) var(--transition-timing-function);
   }
-  .contacts__link_accent:hover, .contacts__link_accent:focus {
+  .contacts__link--accent:hover, .contacts__link--accent:focus {
     color: var(--color-logo-btn-accent);
   }
   .contacts-header {
@@ -801,7 +801,7 @@ body {
     cursor: pointer;
     transition: background-color var(--transition-duration) var(--transition-timing-function);
   }
-  .make-order_accent:hover, .make-order_accent:focus {
+  .make-order--accent:hover, .make-order--accent:focus {
     color: var(--accent-text-for-btn);
     background-color: var(--btn-focus-background-color);
   }
@@ -1027,13 +1027,13 @@ body {
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.clients-list__link_accent:hover, .clients-list__link_accent:focus {
+.clients-list__link--accent:hover, .clients-list__link--accent:focus {
   background-color: transparent;
   border: solid 1px var(--color-logo-btn-accent);
 }
 
-.clients-list__link_accent:hover .clients-list__icon,
-.clients-list__link_accent:focus .clients-list__icon {
+.clients-list__link--accent:hover .clients-list__icon,
+.clients-list__link--accent:focus .clients-list__icon {
   fill: var(--color-logo-btn-accent);
 }
 
@@ -1055,7 +1055,7 @@ body {
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.all-contacts__link-map_accent:hover, .all-contacts__link-map_accent:focus {
+.all-contacts__link-map--accent:hover, .all-contacts__link-map--accent:focus {
   color: var(--color-logo-btn-accent);
 }
 
@@ -1064,7 +1064,7 @@ body {
   margin-top: 13px;
 }
 
-.all-contacts__link-footer_accent:hover, .all-contacts__link-footer_accent:focus {
+.all-contacts__link-footer--accent:hover, .all-contacts__link-footer--accent:focus {
   color: var(--color-logo-btn-accent);
 }
 
@@ -1141,27 +1141,27 @@ body {
   transition: background-color var(--transition-duration) var(--transition-timing-function);
 }
 
-.join-us__item_accent:hover, .join-us__item_accent:focus {
+.join-us__item--accent:hover, .join-us__item--accent:focus {
   background-color: var(--color-logo-btn-accent);
 }
 
-.join-us__item_accent:hover .join-us__item__svg,
-.join-us__item_accent:focus .join-us__item__svg {
+.join-us__item--accent:hover .join-us__item__svg,
+.join-us__item--accent:focus .join-us__item__svg {
   fill: var(--accent-text-for-btn);
 }
 
-.join-us__item_accent:hover .socnet-svg-footer-tw,
-.join-us__item_accent:focus .socnet-svg-footer-tw {
+.join-us__item--accent:hover .socnet-svg-footer-tw,
+.join-us__item--accent:focus .socnet-svg-footer-tw {
   fill: var(--accent-text-for-btn);
 }
 
-.join-us__item_accent:hover .socnet-svg-footer-fb,
-.join-us__item_accent:focus .socnet-svg-footer-fb {
+.join-us__item--accent:hover .socnet-svg-footer-fb,
+.join-us__item--accent:focus .socnet-svg-footer-fb {
   fill: var(--accent-text-for-btn);
 }
 
-.join-us__item_accent:hover .socnet-svg-footer-lnkdn,
-.join-us__item_accent:focus .socnet-svg-footer-lnkdn {
+.join-us__item--accent:hover .socnet-svg-footer-lnkdn,
+.join-us__item--accent:focus .socnet-svg-footer-lnkdn {
   fill: var(--accent-text-for-btn);
 }
 

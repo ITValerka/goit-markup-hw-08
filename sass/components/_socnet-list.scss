@@ -5,7 +5,7 @@
   justify-content: space-between;
   margin: 0 auto;
 
-  &__item_accent {
+  &__item--accent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +30,8 @@
     transition: fill var(--transition-duration)
       var(--transition-timing-function);
 
-    .socnet-list__item_accent:hover &,
-    .socnet-list__item_accent:focus & {
+    .socnet-list__item--accent:hover &,
+    .socnet-list__item--accent:focus & {
       fill: var(--accent-text-for-btn);
     }
   }
@@ -42,8 +42,8 @@
     transition: fill var(--transition-duration)
       var(--transition-timing-function);
 
-    .socnet-list__item_accent:hover &,
-    .socnet-list__item_accent:focus & {
+    .socnet-list__item--accent:hover &,
+    .socnet-list__item--accent:focus & {
       fill: var(--accent-text-for-btn);
     }
   }
@@ -54,8 +54,8 @@
     transition: fill var(--transition-duration)
       var(--transition-timing-function);
 
-    .socnet-list__item_accent:hover &,
-    .socnet-list__item_accent:focus & {
+    .socnet-list__item--accent:hover &,
+    .socnet-list__item--accent:focus & {
       fill: var(--accent-text-for-btn);
     }
   }
@@ -66,8 +66,8 @@
     transition: fill var(--transition-duration)
       var(--transition-timing-function);
 
-    .socnet-list__item_accent:hover &,
-    .socnet-list__item_accent:focus & {
+    .socnet-list__item--accent:hover &,
+    .socnet-list__item--accent:focus & {
       fill: var(--accent-text-for-btn);
     }
   }

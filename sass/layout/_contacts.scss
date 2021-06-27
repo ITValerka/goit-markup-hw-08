@@ -6,8 +6,8 @@
     transition: color var(--transition-duration)
       var(--transition-timing-function);
 
-    &_accent:hover,
-    &_accent:focus {
+    &--accent:hover,
+    &--accent:focus {
       color: var(--color-logo-btn-accent);
     }
   }
@@ -16,8 +16,8 @@
     color: rgba(255, 255, 255, 0.6);
     margin-top: 13px;
 
-    &_accent:hover,
-    &_accent:focus {
+    &--accent:hover,
+    &--accent:focus {
       color: var(--color-logo-btn-accent);
     }
   }
