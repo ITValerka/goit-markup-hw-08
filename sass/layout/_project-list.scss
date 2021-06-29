@@ -1,8 +1,5 @@
-.section-title {
+.section-title--hidden {
   visibility: hidden;
-}
-.filter-container {
-  padding-bottom: 45px;
 }
 .filter {
   display: inline-flex;
@@ -38,7 +35,6 @@
 .project-list {
   &__name {
     @include font(18px, 700, 2, 0.06em);
-    margin-top: 20px;
   }
 
   &__type {
@@ -46,8 +42,8 @@
     color: var(--second-colour-for-text);
   }
   &__meta {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: block;
+    padding: 20px 23px;
     border-left: solid 1px var(--project-border-color);
     border-right: solid 1px var(--project-border-color);
     border-bottom: solid 1px var(--project-border-color);
@@ -84,9 +80,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .filter-container {
-    padding-bottom: 79px;
-  }
   .button {
     padding-left: 0px;
     padding-right: 0px;
@@ -95,6 +88,7 @@
     margin-bottom: 35px;
   }
   .project-list {
+    margin-bottom: -15px;
     &__name {
       margin-top: 0;
     }

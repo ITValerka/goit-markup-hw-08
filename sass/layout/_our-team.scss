@@ -1,6 +1,4 @@
 .section-our-team {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--features-bg-color);
 }
 .team-list {
@@ -48,8 +46,8 @@
     display: flex;
     flex-wrap: nowrap;
     flex-basis: calc(100% / 4);
-  }
-  .section-our-team {
-    padding-top: 94px;
+    &__item {
+      margin-top: 0;
+    }
   }
 }
