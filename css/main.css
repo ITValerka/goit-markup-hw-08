@@ -206,7 +206,7 @@ body {
 
 .section-title {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
@@ -214,6 +214,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-title {
     margin-bottom: 50px;
+    font-size: 36px;
   }
 }
 
@@ -255,7 +256,10 @@ body {
     margin-right: 88px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 15px;
+    margin-left: 45px;
+  }
+  .logo-footer {
+    margin-left: 85px;
   }
 }
 
@@ -428,7 +432,6 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  padding: 0;
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
@@ -535,8 +538,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100vw;
+    height: 100vw;
     overflow: auto;
     background-color: #fff;
     opacity: 0;
@@ -551,7 +554,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100vw;
     margin: 0;
   }
   .mobile-menu__nav {
@@ -567,7 +570,7 @@ body {
     background-color: transparent;
     border: none;
     top: 10px;
-    right: 170px;
+    right: 15px;
     padding: 6px;
     font-size: 0;
     cursor: pointer;
@@ -665,8 +668,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   .header__mobile-menu-btn {
     display: none;
@@ -701,7 +704,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.02em;
     font-family: Roboto;
-    padding-right: 42px;
+    padding-right: 35px;
     cursor: pointer;
   }
   .nav-list__link-studia--active {
@@ -762,6 +765,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
   .all-contacts__list-tel {
     padding-left: 30px;
   }
@@ -1139,13 +1146,12 @@ body {
 
 @media screen and (min-width: 1200px) {
   .clients-list__link {
-    width: 168px;
+    width: 173px;
     margin-top: 0;
     margin-bottom: 0;
   }
   .clients-list {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0px -15px 0px -15px;
   }
 }
 
@@ -1332,6 +1338,9 @@ body {
     justify-content: space-around;
     align-items: flex-start;
   }
+  .footer-container-left {
+    margin-left: -50px;
+  }
   .join-us {
     margin-top: 10px;
   }
@@ -1354,6 +1363,7 @@ body {
   .footer-container-left {
     margin-right: 70px;
     text-align: left;
+    margin-left: 0px;
   }
   .all-contacts__item {
     display: flex;
@@ -1421,6 +1431,10 @@ body {
   letter-spacing: 0.06em;
 }
 
+.project-list__overlay {
+  display: none;
+}
+
 .project-list__type {
   font-size: 16px;
   font-weight: 400;
@@ -1451,7 +1465,7 @@ body {
 .project-list__card--accent:hover .project-list__name,
 .project-list__card--accent:hover .project-list__type, .project-list__card--accent:focus .project-list__name,
 .project-list__card--accent:focus .project-list__type {
-  display: none;
+  visibility: collapse;
 }
 
 @media screen and (min-width: 768px) {
@@ -1481,10 +1495,44 @@ body {
   .project-list__name {
     margin-top: 0;
   }
+  .project-list__overlay {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 63px 24px;
+    color: var(_accent-text-for-btn);
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+  }
+  .project-list__card--accent:hover .project-list__overlay,
+  .project-list__card--accent:focus .project-list__overlay {
+    transform: translateY(0%);
+  }
+  .project-list__content-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-list__card {
+    margin: 15px;
+    transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+  }
+  .project-list__card--accent:hover, .project-list__card--accent:focus {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
   .project-list__card--accent:hover .project-list__name,
   .project-list__card--accent:hover .project-list__type, .project-list__card--accent:focus .project-list__name,
   .project-list__card--accent:focus .project-list__type {
-    display: block;
+    visibility: visible;
   }
 }
 /*# sourceMappingURL=main.css.map */

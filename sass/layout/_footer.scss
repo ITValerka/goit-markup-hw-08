@@ -136,6 +136,9 @@
     justify-content: space-around;
     align-items: flex-start;
   }
+  .footer-container-left {
+    margin-left: -50px;
+  }
   .join-us {
     margin-top: 10px;
   }
@@ -158,6 +161,7 @@
   .footer-container-left {
     margin-right: 70px;
     text-align: left;
+    margin-left: 0px;
   }
   .all-contacts__item {
     display: flex;
